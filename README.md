@@ -16,11 +16,13 @@ respecting the indentation level in all the files in `dir`.
 For example, for
 
 *input_file*
-self.assertRaises(Error, call, param1, param2)
+
+    self.assertRaises(Error, call, param1, param2)
 
 *output_file*
-with self.assertRaises():
-    call(param1, param2)
+
+    with self.assertRaises():
+        call(param1, param2)
 
 it will replace occurrences of input for output in all files
 
@@ -30,6 +32,7 @@ Limitations
 - Works only with full lines
 - Very early development
 - For more syntax aware refactors, take a look at undebt (http://undebt.readthedocs.io/en/latest/)
+- Only indentation with spaces, no tabs
 
 To Dos
 ------
