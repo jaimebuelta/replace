@@ -7,7 +7,8 @@ A command line tool to replace text easily and recursively in directories
 
 Usage
 -----
-replace.py [-h] [dir] input_file output_file
+
+    python replace.py [-h] [dir] input_file output_file
 
 It replaces the content of input_file with the content of output_file, 
 respecting the indentation level in all the files in `dir`.
@@ -35,5 +36,6 @@ To Dos
 - More tests
 - Properly packetize it and make a script
 - Use parse (https://github.com/r1chardj0n3s/parse) to allow better control
-over replacement
+over replacement, it will probably be never super awesome, but will add tons
+of flexibility
 - Maye unify the input and output files to replace
